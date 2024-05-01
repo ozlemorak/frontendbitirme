@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+
+    <!-- ! Fontsawesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- ! Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- ! External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ! Header Kısmı Buradan Başlıyor -->
+    <header class="container-fluid">
+        <!-- ! Header Kısmının İlk Satırı Buradan Başlıyor -->
+        <div class="row bg-grey py-2">
+            <div class="col-12 header-top d-flex justify-content-between px-5">
+                <div class="header-contact d-none d-sm-inline-block">
+                    <a href="#" class="text-black d-inline-block me-5">
+                        <i class="fa-solid fa-phone"></i>
+                        +2 95 01 88 281
+                    </a>
+                    <a href="#" class="text-black">
+                        <i class="fa-solid fa-envelope"></i>
+                        info@domain.com
+                    </a>
+                </div>
+                <div class="header-social-media">
+                    <i class="fa-brands fa-facebook-f me-4"></i>
+                    <i class="fa-brands fa-twitter me-4"></i>
+                    <i class="fa-brands fa-linkedin-in me-4"></i>
+                    <i class="fa-brands fa-glide-g"></i>
+                </div>
+            </div>
+        </div>
+        <!-- ! Header Kısmının Ortadaki Satırı Buradan Başlıyor -->
+        <div class="row border-bottom px-5 py-3">
+            <div class="col-12 header-center d-flex justify-content-between">
+                <div class="logo-section">
+                    <a href="index.html">
+                        <img src="img/logo.PNG" class="me-3" alt="logo">
+                    </a>
+                    <select class="me-3 d-none d-lg-inline-block" name="" id="">
+                        <option value="">USA</option>
+                    </select>
+                    <select class="me-3 d-none d-lg-inline-block" name="" id="">
+                        <option value="">DOLLAR</option>
+                    </select>
+                </div>
+                <div class="user-section d-flex align-items-center">
+                    <ul class="d-flex m-0">
+                        <li>
+                            <a href="#" class="text-black me-3">
+                                <i class="fa-solid fa-user"></i>
+                                User
+                            </a>
+                        </li>
+                        <li>
+                            <a href="wishlist.html" class="text-black me-3 d-none d-sm-block">
+                                <i class="fa-solid fa-star"></i>
+                                Whistlist
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-black me-3 d-none d-sm-block">
+                                <i class="fa-solid fa-bullseye"></i>
+                                Checkout
+                            </a>
+                        </li>
+                        <li>
+                            <a href="cart.html" class="text-black me-3 d-none d-sm-block">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Cart
+                            </a>
+                        </li>
+                        <li>
+                            <a href="login.html" class="text-black me-3">
+                                <i class="fa-solid fa-lock"></i>
+                                Login
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- ! Header Kısmının En Alt Satırı Buradan Başlıyor -->
+        <nav class="navbar navbar-expand-lg bg-body-white">
+            <div class="container-fluid px-5">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-orange" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Shop
+                            </a>
+                            <ul class="dropdown-menu w-50">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Blog
+                            </a>
+                            <ul class="dropdown-menu w-50">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">404</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle d-block d-lg-none" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Category
+                            </a>
+                            <ul class="dropdown-menu w-50">
+                                <li><a class="dropdown-item" href="#">Sportswear</a></li>
+                                <li><a class="dropdown-item" href="#">Mens</a></li>
+                                <li><a class="dropdown-item" href="#">Womens</a></li>
+                                <li><a class="dropdown-item" href="#">Kids</a></li>
+                                <li><a class="dropdown-item" href="#">Fashion</a></li>
+                                <li><a class="dropdown-item" href="#">Households</a></li>
+                                <li><a class="dropdown-item" href="#">Interiors</a></li>
+                                <li><a class="dropdown-item" href="#">Clothing</a></li>
+                                <li><a class="dropdown-item" href="#">Bag</a></li>
+                                <li><a class="dropdown-item" href="#">Shoes</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-inline-block d-sm-none" aria-current="page" href="#">Whistlist</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-inline-block d-sm-none" aria-current="page" href="#">Checkout</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-inline-block d-sm-none " aria-current="page" href="#">Cart</a>
+                        </li>
+
+                    </ul>
+                    <div class="input-group w-25">
+                        <input type="text" class="form-control shadow-none " placeholder="Search"
+                            aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-none bg-orange" type="button" id="button-addon2">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ! Cart bölümünün content kısmı buradan başlıyor -->
+
+    <div class="container">
+        <div class="cart-section">
+            <div class="row mt-5 bg-orange p-2 text-white">
+                <div class="col-5">
+                    <h5>Item</h5>
+                </div>
+                <div class="col-2">
+                    <h5>Price</h5>
+                </div>
+                <div class="col-2">
+                    <h5>Quantity</h5>
+                </div>
+                <div class="col-3">
+                    <h5 class="text-center">Total</h5>
+                </div>
+            </div>
+
+            <!-- ! Cart Bölümünün Ürün Ekleme Kısmı Buradan Başlıyor -->
+            <!-- ! İlk Ürün -->
+            <div class="row border border-bottom py-3">
+                <div class="col-5 d-flex productWrapper">
+                    <img class="w-25" src="img/t-shirt3.jpg" alt="...">
+                    <div class="info ps-5 pt-4">
+                        <h5>Black T-shirt</h5>
+                        <h6>Web ID:1089772</h6>
+                    </div>
+                </div>
+                <div id="product1" class="col-2">
+                    <h5 class="pt-4 price">60$</h5>
+                </div>
+                <div class="col-2">
+                    <div class="quantity pt-4">
+                        <button class="w-25" onclick="increaseValue(1)">+</button>
+                        <p id="value1" class="d-inline-block border border-1 w-25 text-center">1</p>
+                        <button class="w-25" onclick="decreaseValue(1)">-</button>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="total pt-4 text-center">
+                        <h5 id="subtotal1" class="d-inline-block subtotal">60$</h5>
+                        <i onclick="removeProduct(1)" class="fa-solid fa-square-xmark float-end fs-2 color-grey"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- ! İkinci Ürün -->
+            <div class="row border border border-top-0 py-3">
+                <div class="col-5 d-flex productWrapper">
+                    <img class="w-25" src="img/orangejacket.jpg" alt="...">
+                    <div class="info ps-5 pt-4">
+                        <h5>Orange Jacket</h5>
+                        <h6>Web ID:1089772</h6>
+                    </div>
+                </div>
+                <div id="product2" class="col-2">
+                    <h5 class="pt-4 price">80$</h5>
+                </div>
+                <div class="col-2">
+                    <div class="quantity pt-4">
+                        <button class="w-25" onclick="increaseValue(2)">+</button>
+                        <p id="value2" class="d-inline-block border border-1 w-25 text-center">1</p>
+                        <button class="w-25" onclick="decreaseValue(2)">-</button>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="total pt-4 text-center">
+                        <h5 id="subtotal2" class="d-inline-block subtotal">80$</h5>
+                        <i onclick="removeProduct(2)" class="fa-solid fa-square-xmark float-end fs-2 color-grey"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- ! Üçüncü Ürün -->
+            <div class="row border border border-top-0 py-3">
+                <div class="col-5 d-flex">
+                    <img class="w-25" src="img/short-skirt.jpg" alt="...">
+                    <div class="info ps-5 pt-4">
+                        <h5>Short Skirt</h5>
+                        <h6>Web ID:1089772</h6>
+                    </div>
+                </div>
+                <div id="product3" class="col-2">
+                    <h5 class="pt-4 price">40$</h5>
+                </div>
+                <div class="col-2">
+                    <div class="quantity pt-4">
+                        <button class="w-25" onclick="increaseValue(3)">+</button>
+                        <p id="value3" class="d-inline-block border border-1 w-25 text-center">1</p>
+                        <button class="w-25" onclick="decreaseValue(3)">-</button>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="total pt-4 text-center">
+                        <h5 id="subtotal3" class="d-inline-block subtotal">40$</h5>
+                        <i onclick="removeProduct(3)"
+                            class="fa-solid fa-square-xmark float-end fs-2 color-grey pointer-event"></i>
+                    </div>
+                </div>
+            </div>
+                  
+            
+        </div>
+
+        <div id="totalPrice" class="pt-4 text-center">
+            <h5>Total:</h5>
+        </div>
+        
+        
+        <!-- ! Cart Altındaki Bölüm Buradan Başlıyor -->
+        <div class="result-section mt-5">
+            <div class="result-section-title">
+                <h5>What would you like to do next?</h5>
+                <p>Choose if you have a discount code or reward points you want to use or would like to estimate your
+                    delivery coast.</p>
+            </div>
+            <div class="row mb-5">
+                <div class="col-12 col-md-6 px-md-5 py-3 border border-1 mb-3 me-5">
+                    <div class="input">
+                        <input type="checkbox">
+                        <p class="d-inline-flex m-1">Use Coupon Code</p>
+                    </div>
+                    <div class="input">
+                        <input type="checkbox">
+                        <p class="d-inline-flex m-1">Use Gift Voucher</p>
+                    </div>
+                    <div class="input">
+                        <input type="checkbox">
+                        <p class="d-inline-flex m-1">Estimate Shipping & Taxes</p>
+                    </div>
+                    <!-- ! Form Section Buradan Başlıyor -->
+                    <form class="d-flex justify-content-between mt-3">
+                        <div class="d-flex flex-column w-25 me-2">
+                            <label class="mb-2" for="country">Country</label>
+                            <select class="bg-grey" name="country" id="">
+                                <option>Unıted States</option>
+                            </select>
+                        </div>
+                        <div class="d-flex flex-column w-25 me-2">
+                            <label class="mb-2" for="country">Region/State</label>
+                            <select class="bg-grey" name="country" id="">
+                                <option>Select</option>
+                            </select>
+                        </div>
+                        <div class="d-flex flex-column w-25">
+                            <label class="mb-2" for="country">ZIP Code</label>
+                            <input type="text">
+                        </div>
+                    </form>
+                    <div class="buttons mt-4">
+                        <button class="btn bg-orange text-white rounded-0 me-4">Get Quotes</button>
+                        <button class="btn bg-orange text-white rounded-0">Continue</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 px-md-5 py-3 border border">
+                    <div class="total-prices">
+                        <div class="sub-total d-flex justify-content-between bg-grey py-2 px-2 mb-3">
+                            <h6 class="m-0">Card Sub Total</h6>
+                            <h6 id="totalPrice" class="m-0"></h6>
+                        </div>
+                        <div class="sub-total d-flex justify-content-between bg-grey py-2 px-2 mb-3">
+                            <h6 class="m-0">Eco Tax</h6>
+                            <h6 id="ecoTax" class="m-0"></h6>
+                        </div>
+                        <div class="sub-total d-flex justify-content-between bg-grey py-2 px-2 mb-3">
+                            <h6 class="m-0">Shipping Cost</h6>
+                            <h6 id="shippingCost" class="m-0"></h6>
+                        </div>
+                        <div class="sub-total d-flex justify-content-between bg-grey py-2 px-2 mb-3">
+                            <h6 class="m-0">Total</h6>
+                            <h6 id="result" class="m-0"></h6>
+                        </div>
+                        <div class="buttons mt-4">
+                            <button class="btn bg-orange text-white rounded-0 me-4 mb-2">Update</button>
+                            <button class="btn bg-orange text-white rounded-0">Check Out</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- ! Footer Section Buradan Başlıyor -->
+    <div class="container-fluid mt-5 pt-4 px-0 bg-light-grey">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-sm-3">
+                    <h3 class="fs-5 mt-3"><span class="text-orange">E</span>-SHOPPER</h3>
+                    <p class="fs-7">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque vitae modi aut, totam esse
+                        tempore.
+                    </p>
+                </div>
+                <div class="col-6 col-sm-9">
+                    <img class="d-none d-xl-inline-block" src="img/footer-photo1.PNG" alt="">
+                    <img class="d-none d-sm-inline-block" src="img/footer-photo2.PNG" alt="">
+                    <img src="img/footer-photo3.PNG" alt="">
+                    <img src="img/footer-photo4.PNG" alt="">
+                    <img class="d-none d-sm-inline-block ms-5" src="img/footer-photo5.PNG" alt="">
+                </div>
+            </div>
+        </div>
+        <hr class="m-0 p-0">
+        <!-- ! Footer 2. satır buradan başlıyor -->
+        <div class="container-fluid container-md mb-5">
+            <div class="row mt-3">
+                <div class="col-12 col-sm-8 mt-3 d-flex justify-content-between">
+                    <div class="service">
+                        <h5 class="fs-5">SERVICE</h5>
+                        <ul class="m-0 p-0">
+                            <li>
+                                <a class="fs-8" href="#">Online Help</a>
+                            </li>
+                            <li>
+                                <a class="fs-8" href="#">Contact Us</a>
+                            </li>
+                            <li>
+                                <a class="fs-8" href="#">Order Status</a>
+                            </li>
+                            <li>
+                                <a class="fs-8" href="#">Change Location</a>
+                            </li>
+                            <li>
+                                <a class="fs-8" href="#">FAQ's</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="service">
+                        <h5 class="fs-5">QUOCK SHOP</h5>
+                        <ul class="m-0 p-0">
+                            <li>
+                                <a class="fs-8" href="#">Online Help</a>
+                            </li>
+                            <li>
+                                <a class="fs-8" href="#">Contact Us</a>
+                            </li>
+                            <li>
+                                <a class="fs-8" href="#">Order Status</a>
+                            </li>
+                            <li>
+                                <a class="fs-8" href="#">Change Location</a>
+                            </li>
+                            <li>
+                                <a class="fs-8" href="#">FAQ's</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="service">
+                        <h5 class="fs-5">POLICIES</h5>
+                        <ul class="m-0 p-0">
+                            <li>
+                                <a class="fs-8" href="#">Online Help</a>
+                            </li>
+                            <li>
+                                <a class="fs-8" href="#">Contact Us</a>
+                            </li>
+                            <li>
+                                <a class="fs-8" href="#">Order Status</a>
+                            </li>
+                            <li>
+                                <a class="fs-8" href="#">Change Location</a>
+                            </li>
+                            <li>
+                                <a class="fs-8" href="#">FAQ's</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="service">
+                        <h5 class="fs-5">ABOUT SHOPPER</h5>
+                        <ul class="m-0 p-0">
+                            <li>
+                                <a class="fs-8" href="#">Online Help</a>
+                            </li>
+                            <li>
+                                <a class="fs-8" href="#">Contact Us</a>
+                            </li>
+                            <li>
+                                <a class="fs-8" href="#">Order Status</a>
+                            </li>
+                            <li>
+                                <a class="fs-8" href="#">Change Location</a>
+                            </li>
+                            <li>
+                                <a class="fs-8" href="#">FAQ's</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service col-12 col-sm-4 mt-3">
+                    <h5 class="fs-5 text-center w-100">ABOUT SHOPPER</h5>
+                    <div class="right-section d-flex flex-column align-items-end">
+                        <div class="input-group mb-3 w-75">
+                            <input type="text" class="form-control shadow-none" placeholder="Your email adress"
+                                aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <button class="btn btn-outline-black bg-orange" type="button" id="button-addon2">
+                                <i class="fa-regular fa-circle-right text-white"></i>
+                            </button>
+                        </div>
+                        <p class="fs-7 w-75">Get the most recent updates from our site and be updated your self... </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ! Footer 3.Satır Buradan Başlıyor -->
+        <div class="footer-denemesi container-fluid bg-grey p-0">
+            <div class="container   ">
+                <div class="footer-bottom d-flex justify-content-between">
+                    <p>Copyright © 2013 E-SHOPPER Inc. All rights reserved</p>
+                    <div class="d-flex">
+                        <p class="d-none d-sm-inline-block me-5">Designed by <span> <ins
+                                    class="text-orange">Themeum</ins> </span></p>
+                        <div class="bg-orange chevron-up text-center">
+                            <i class="fa-solid fa-chevron-up"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- ! Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+    <!-- ! External JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>

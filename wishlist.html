@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist</title>
+
+    <!-- ! Fontsawesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- ! Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- ! External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <!-- ! Header Kısmı Buradan Başlıyor -->
+    <header class="container-fluid">
+        <!-- ! Header Kısmının İlk Satırı Buradan Başlıyor -->
+        <div class="headercolor row py-3">
+            <div class="col-12 header-top d-flex justify-content-between px-5">
+                <div class="header-contact d-none d-sm-inline-block">
+                    <a href="#" class="text-black d-inline-block me-5">
+                        <i class="fa-solid fa-phone"></i>
+                        +2 95 01 88 281
+                    </a>
+                    <a href="#" class="text-black">
+                        <i class="fa-solid fa-envelope"></i>
+                        info@domain.com
+                    </a>
+                </div>
+                <div class="header-social-media">
+                        <a href="https://www.facebook.com/?locale=tr_TR" target="_blank"><i class="fa-brands fa-facebook-f me-4"></i></a>
+                        <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter me-4"></i></a>
+                        <a href="https://tr.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in me-4"></i></a>
+                        <a href="https://glideworkflow.com/" target="_blank"><i class="fa-brands fa-glide-g"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- ! Header Kısmının Ortadaki Satırı Buradan Başlıyor -->
+        <div class="row border-bottom px-5 py-3">
+            <div class="col-12 header-center d-flex justify-content-between">
+                <div class="logo-section">
+                    <a href="index.html">
+                        <img src="img/logo.PNG" class="me-3" alt="logo">
+                    </a>
+                    <select class="me-3 d-none d-lg-inline-block" name="" id="">
+                        <option value="">USA</option>
+                    </select>
+                    <select class="me-3 d-none d-lg-inline-block" name="" id="">
+                        <option value="">DOLLAR</option>
+                    </select>
+                </div>
+                <div class="user-section d-flex align-items-center">
+                    <ul class="d-flex m-0">
+                        <li>
+                            <a href="#" class="text-black me-3">
+                                <i class="fa-solid fa-user"></i>
+                                User
+                            </a>
+                        </li>
+                        <li>
+                            <a href="wishlist.html" class="text-black me-3 d-none d-sm-block">
+                                <i class="fa-solid fa-star"></i>
+                                Whistlist
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-black me-3 d-none d-sm-block">
+                                <i class="fa-solid fa-bullseye"></i>
+                                Checkout
+                            </a>
+                        </li>
+                        <li>
+                            <a href="cart.html" class="text-black me-3 d-none d-sm-block">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Cart
+                            </a>
+                        </li>
+                        <li>
+                            <a href="login.html" class="text-black me-3">
+                                <i class="fa-solid fa-lock"></i>
+                                Login
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- ! Header Kısmının En Alt Satırı Buradan Başlıyor -->
+        <nav class="navbar navbar-expand-lg bg-body-white">
+            <div class="container-fluid px-5">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-orange" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Shop
+                            </a>
+                            <ul class="dropdown-menu w-50">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Blog
+                            </a>
+                            <ul class="dropdown-menu w-50">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">404</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle d-block d-lg-none" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Category
+                            </a>
+                            <ul class="dropdown-menu w-50">
+                                <li><a class="dropdown-item" href="#">Sportswear</a></li>
+                                <li><a class="dropdown-item" href="#">Mens</a></li>
+                                <li><a class="dropdown-item" href="#">Womens</a></li>
+                                <li><a class="dropdown-item" href="#">Kids</a></li>
+                                <li><a class="dropdown-item" href="#">Fashion</a></li>
+                                <li><a class="dropdown-item" href="#">Households</a></li>
+                                <li><a class="dropdown-item" href="#">Interiors</a></li>
+                                <li><a class="dropdown-item" href="#">Clothing</a></li>
+                                <li><a class="dropdown-item" href="#">Bag</a></li>
+                                <li><a class="dropdown-item" href="#">Shoes</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-inline-block d-sm-none" aria-current="page"
+                                href="wishlist.html">Whistlist</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-inline-block d-sm-none" aria-current="page" href="#">Checkout</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-inline-block d-sm-none " aria-current="page" href="cart.html">Cart</a>
+                        </li>
+
+                    </ul>
+                    <div class="input-group w-25">
+                        <input id="inpt" type="text" class="form-control shadow-none " placeholder="Search"
+                            aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button id="searchBtn" class="btn btn-outline-none bg-orange" type="button" >
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ! Wishlist Content Kısmı Buradan Başlıyor -->
+    <div class="container">
+        <div class="wishlist-add1 mt-4">
+            <img class="w-100" src="img/wishlist-add.PNG" alt="">
+        </div>
+    </div>
+
+    <!-- ! Content ve Side-Bar Kısımları Başlıyor -->
+    <div class="row px-5 pt-5 m-0">
+        <div class="d-none d-md-block col-md-4 col-lg-3">
+            <h4 class="text-orange text-center mb-4">CATEGORY</h4>
+            <!-- ! Accordion Kısmı Buradan Başlıyor -->
+            <div class="accordion border border-1 ms-4">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item border-0">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed shadow-none m-0 py-2" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                SPORTSWEAR
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion
+                                body.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-0">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed shadow-none m-0 py-2" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                MENS
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion
+                                body. Let's imagine this being filled with some actual content.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-0">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed shadow-none m-0 py-2" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                WOMENS
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion
+                                body. Nothing more exciting happening here in terms of content, but just filling up the
+                                space to make it look, at least at first glance, a bit more representative of how this
+                                would look in a real-world application.</div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="m-0 px-6 fs-6">
+                    <li class="py-2">
+                        <a class="text-black" href="#">KIDS</a>
+                    </li>
+                    <li class="py-2">
+                        <a class="text-black" href="#">FASHION</a>
+                    </li>
+                    <li class="py-2">
+                        <a class="text-black" href="#">HOUSEHOLDS</a>
+                    </li>
+                    <li class="py-2">
+                        <a class="text-black" href="#">INTERIORS</a>
+                    </li>
+                    <li class="py-2">
+                        <a class="text-black" href="#">CLOTHING</a>
+                    </li>
+                    <li class="py-2">
+                        <a class="text-black" href="#">BAGS</a>
+                    </li>
+                    <li class="py-2">
+                        <a class="text-black" href="#">SHOES</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="wishlist-add2 text-center mt-4">
+                <img class="w-90 ps-3" src="img/wishlist-add2.PNG" alt="">
+            </div>
+        </div>
+
+        <!-- ! Ürünlerin Yer Aldığı Content Kısmı Buradan Başlıyor -->
+        <div class="col-12 col-md-8 col-lg-9">
+            <div id="productRow" class="row">
+                <h4 class="text-orange text-center mb-4">FEATURES ITEMS</h4>
+                <!-- ! Ürün1 -->
+                <div class="col-12 col-sm-6 col-lg-4 mb-2 kart">
+                    <div class="card text-center">
+                        <img width="100px" height="250px" src="img/brown-jacket.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-orange fw-bold fs-4">56 $</h5>
+                            <p id="cardText" class="card-text">Brown Jacket</p>
+                            <a href="#" class="btn bg-grey">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add To Cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ! Ürün2 -->
+                <div class="col-12 col-sm-6 col-lg-4 mb-2 kart">
+                    <div class="card text-center">
+                        <img width="100px" height="250px" src="img/pink-trousers.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-orange fw-bold fs-4">65 $</h5>
+                            <p class="card-text">Pink Trousers</p>
+                            <a href="#" class="btn bg-grey">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add To Cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-2 kart">
+                    <div class="card text-center">
+                        <img width="100px" height="250px" src="img/short-skirt.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-orange fw-bold fs-4">71 $</h5>
+                            <p class="card-text">Short Skirt</p>
+                            <a href="#" class="btn bg-grey">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add To Cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-2 kart">
+                    <div class="card text-center">
+                        <img width="100px" height="250px" src="img/t-shirt1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-orange fw-bold fs-4">71 $</h5>
+                            <p class="card-text">Grey Unisex T-shirt</p>
+                            <a href="#" class="btn bg-grey">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add To Cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-2 kart">
+                    <div class="card text-center">
+                        <img width="100px" height="250px" src="img/t-shirt2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-orange fw-bold fs-4">71 $</h5>
+                            <p class="card-text">White Unisex T-shirt</p>
+                            <a href="#" class="btn bg-grey">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add To Cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-2 kart">
+                    <div class="card text-center">
+                        <img width="100px" height="250px" src="img/t-shirt3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-orange fw-bold fs-4">71 $</h5>
+                            <p class="card-text">Black Unisex T-shirt</p>
+                            <a href="#" class="btn bg-grey">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add To Cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-2 kart">
+                    <div class="card text-center">
+                        <img width="100px" height="250px" src="img/t-shirt4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-orange fw-bold fs-4">71 $</h5>
+                            <p class="card-text">White Men T-shirt</p>
+                            <a href="#" class="btn bg-grey">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add To Cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-2 kart">
+                    <div class="card text-center">
+                        <img width="100px" height="250px" src="img/trousers1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-orange fw-bold fs-4">71 $</h5>
+                            <p class="card-text">Dark Blue Men Trousers</p>
+                            <a href="#" class="btn bg-grey">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add To Cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-2 kart">
+                    <div class="card text-center">
+                        <img width="100px" height="250px" src="img/trousers2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-orange fw-bold fs-4">71 $</h5>
+                            <p class="card-text">Light Blue Men Trousers</p>
+                            <a href="#" class="btn bg-grey">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add To Cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-2 kart">
+                    <div class="card text-center">
+                        <img width="100px" height="250px" src="img/womens1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-orange fw-bold fs-4">71 $</h5>
+                            <p class="card-text">White Women Bluz</p>
+                            <a href="#" class="btn bg-grey">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add To Cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-2 kart">
+                    <div class="card text-center">
+                        <img width="100px" height="250px" src="img/womens2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-orange fw-bold fs-4">71 $</h5>
+                            <p class="card-text">Women Sweatshirt</p>
+                            <a href="#" class="btn bg-grey">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add To Cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-2 kart">
+                    <div class="card text-center">
+                        <img width="100px" height="250px" src="img/womens3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-orange fw-bold fs-4">71 $</h5>
+                            <p class="card-text">White Women T-shirt</p>
+                            <a href="#" class="btn bg-grey">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add To Cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-2 kart">
+                    <div class="card text-center">
+                        <img width="100px" height="250px" src="img/womens4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-orange fw-bold fs-4">71 $</h5>
+                            <p class="card-text">Brown Women Sweatshirt</p>
+                            <a href="#" class="btn bg-grey">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add To Cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-2 kart">
+                    <div class="card text-center">
+                        <img width="100px" height="250px" src="img/womens5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-orange fw-bold fs-4">71 $</h5>
+                            <p class="card-text">White Women Shirt</p>
+                            <a href="#" class="btn bg-grey">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add To Cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-2 kart">
+                    <div class="card text-center">
+                        <img width="100px" height="250px" src="img/womens6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-orange fw-bold fs-4">71 $</h5>
+                            <p class="card-text">Women Skirt</p>
+                            <a href="#" class="btn bg-grey">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add To Cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-2 kart">
+                    <div class="card text-center">
+                        <img width="100px" height="250px" src="img/womens7.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-orange fw-bold fs-4">71 $</h5>
+                            <p class="card-text">Red Women Skirt</p>
+                            <a href="#" class="btn bg-grey">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add To Cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+
+
+    <!-- ! Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+    <!-- ! External JS -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
